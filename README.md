@@ -51,4 +51,4 @@ A modern, responsive, and fully functional E-commerce front-end web application 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Night-Fury-MD/E-Commerce.git](https://github.com/Night-Fury-MD/E-Commerce.git)
+   git clone https://github.com/Night-Fury-MD/E-Commerce.git
