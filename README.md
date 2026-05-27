@@ -2,7 +2,7 @@
 
 A modern, responsive, and fully functional E-commerce front-end web application built using native web technologies. The project demonstrates advanced DOM manipulation, asynchronous data fetching, and state persistence using `localStorage`.
 
-🔗 **[Live Demo](https://Night-Fury-MD.github.io/E-Commerce)
+🔗 **[Live Demo](https://Night-Fury-MD.github.io/E-Commerce)**
 
 ---
 
@@ -26,7 +26,7 @@ A modern, responsive, and fully functional E-commerce front-end web application 
 
 ### 🌐 Asynchronous Data Fetching
 - Simulates real-world production delays using a custom `Promise` delay.
-- Fetches initial mock data from the **FakeStore API** securely using `async/await` and robust error handling.
+- Fetched initial mock data from the **FakeStore API** securely using `async/await` and robust error handling.
 
 ---
 
@@ -51,4 +51,4 @@ A modern, responsive, and fully functional E-commerce front-end web application 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone [https://github.com/Night-Fury-MD/E-Commerce.git](https://github.com/Night-Fury-MD/E-Commerce.git)
