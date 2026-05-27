@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Market | Premium Shopping</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1> Nexus Market 🛒</h1>
+      <div class="auth-buttons">
+          <button id="open-auth-btn" class="btn btn-customer">Login / Register 🔑</button>
+          <button id="logout-btn" class="btn btn-cancel" style="display: none;">Logout 🚪</button>
+          <span id="auth-status">Current User: <b>Guest 🚶‍♂️</b></span>
+          <button id="add-product-btn" class="btn-add" style="display: none;">Add Product ➕</button>
+      </div>
+      <div class="controls">
+        <input type="text" id="search-input" placeholder="🔍 Search products..." />
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewelery</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
+
+        <select id="sort-select">
+          <option value="">Sort by Price ⚖️</option>
+          <option value="asc">Price: Low to High</option>
+          <option value="desc">Price: High to Low</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div id="products-container" class="products-grid">
+        <p class="loading-text">Loading products from API... 🔄</p>
+      </div>
+    </main>
+
+    <div id="product-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Add New Product 📦</h2>
+        <input type="text" id="modal-title" placeholder="Product Title">
+        <input type="number" id="modal-price" placeholder="Product Price">
+        <select id="modal-category">
+          <option value="">Select Category</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewelery</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
+        <div class="modal-actions">
+          <button id="save-product-btn" class="btn-save">Save 🎉</button>
+          <button id="cancel-product-btn" class="btn-cancel">Cancel ❌</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="auth-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2 id="auth-modal-title">Login 🔐</h2>
+        <input type="text" id="auth-username" placeholder="Username">
+        <input type="password" id="auth-password" placeholder="Password">
+        
+        <select id="auth-role" style="display: none; margin-bottom: 10px;">
+          <option value="customer">Customer 👤</option>
+          <option value="admin">Admin 👨‍💼</option>
+        </select>
+
+        <div class="modal-actions">
+          <button id="auth-submit-btn" class="btn-save">Login</button>
+          <button id="auth-cancel-btn" class="btn-cancel">Cancel ❌</button>
+        </div>
+        <p id="toggle-auth-mode" style="margin-top: 15px; color: #3498db; cursor: pointer; font-size: 14px;">
+          Don't have an account? Register here
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
